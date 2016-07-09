@@ -17,7 +17,7 @@ public:
 	lowerCaseString & operator = (const lowerCaseString &);
 	lowerCaseString & operator = (const WCS_String &);
 private:
-
+	static int x;
 };
 
 #endif // !LOWER_CASE_STRING_H
