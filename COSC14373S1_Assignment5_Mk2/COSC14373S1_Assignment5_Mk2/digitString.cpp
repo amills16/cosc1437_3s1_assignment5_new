@@ -43,8 +43,9 @@ digitString digitString::Copy(const digitString & DS)
 		{
 			cout << "Character '" << DS[c] << "' at position: " << c << " is not a digit..." << endl;
 			throw 01;
+			break;
 		}
-		else if (c == len)
+		else if (c == len-1)
 		{
 			WCS_String::Copy(DS);
 		}
@@ -62,8 +63,9 @@ digitString digitString::Copy(const WCS_String & Str)
 		{
 			cout << "Character '" << Str[c] << "' at position: " << c << " is not a digit..." << endl;
 			throw 01;
+			break;
 		}
-		else if (c == len)
+		else if (c == len-1)
 		{
 			WCS_String::Copy(Str);
 		}
