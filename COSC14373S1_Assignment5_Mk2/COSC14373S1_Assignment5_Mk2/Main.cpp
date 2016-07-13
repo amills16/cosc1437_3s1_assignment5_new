@@ -10,12 +10,24 @@ void main()
 	WCS_String str1("ABCdef");
 	WCS_String str2("12345");
 	WCS_String str3("54321");
+	WCS_String str4("fedcba");
 	lowerCaseString LC1;
 	lowerCaseString LC2(str1);
 	lowerCaseString LC3(LC2);
 	digitString DS1(str2);
 	digitString DS2(DS1);
 	digitString DS3(str3);
+	upperCaseString UC1;
+	upperCaseString UC2(str1);
+	upperCaseString UC3(UC2);
+	cout << "Printing upperCaseString values pre-operation: \n \t UC1: " << UC1 << endl;
+	cout << "\t UC2: " << UC2 << endl;
+	cout << "\t UC3: " << UC3 << endl;
+	UC1 = str4;
+	cout << "Printing upperCaseString values pre-operation: \n \t UC1: " << UC1 << endl;
+	cout << "\t UC2: " << UC2 << endl;
+	cout << "\t UC3: " << UC3 << endl;
+	
 	cout << "Printing digitString values pre-operation: \n \t DS1: " << DS1 << endl;
 	cout << "\t DS2: " << DS2 << endl;
 	cout << "\t DS3: " << DS3 << endl;
