@@ -4,7 +4,9 @@ upperCaseString::upperCaseString()
 {}
 
 upperCaseString::upperCaseString(const upperCaseString & LC) : WCS_String(LC)
-{}
+{
+	ToUpper();
+}
 
 upperCaseString::upperCaseString(const WCS_String & Str) : WCS_String(Str)
 {
@@ -40,14 +42,12 @@ upperCaseString upperCaseString::Copy(const WCS_String & Str)
 upperCaseString &upperCaseString::operator = (const upperCaseString & LC)
 {
 	Copy(LC);
-	ToUpper();
 	return *this;
 }
 
 upperCaseString &upperCaseString::operator = (const WCS_String & LC)
 {
 	Copy(LC);
-	ToUpper();
 	return *this;
 }
 

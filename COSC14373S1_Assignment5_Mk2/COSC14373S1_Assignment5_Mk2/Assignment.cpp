@@ -26,6 +26,6 @@ Visual Studio. This will be emailed to the instructor with the subject line
 
 2) If you wish any feedback on your work, turn in a printed listing of the .cpp and
 
-.h files that you created.
+	.h files that you created.
 
 DUE DATE: 14 July 2016*/

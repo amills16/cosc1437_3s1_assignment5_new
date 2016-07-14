@@ -1,5 +1,5 @@
-#ifndef UPPER_CASE_STRING
-#define UPPER_CASE_STRING
+#ifndef UPPER_CASE_STRING_H
+#define UPPER_CASE_STRING_H
 
 #include <WCS_String.h>
 
@@ -17,7 +17,7 @@ public:
 	upperCaseString & operator = (const upperCaseString &);
 	upperCaseString & operator = (const WCS_String &);
 private:
-
+	//upperCaseString toUpper(WCS_String &);
 };
 
 #endif // !UPPER_CASE_STRING_H
