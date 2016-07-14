@@ -30,7 +30,7 @@ digitString digitString::Concat(const digitString & DS)
 digitString digitString::Concat(const WCS_String & Str)
 {
 	WCS_String::Concat(Str);
-	ToUpper();
+	
 	return *this;
 }
 
@@ -55,7 +55,6 @@ digitString digitString::Copy(const digitString & DS)
 
 digitString digitString::Copy(const WCS_String & Str)
 {
-	//WCS_String::Copy(Str);
 	int c, len;
 	for (c = 0, len = Str.Length(); c < len; c++)
 	{
@@ -82,6 +81,22 @@ digitString &digitString::operator = (const digitString & DS)
 digitString &digitString::operator = (const WCS_String & DS)
 {
 	Copy(DS);
+	return *this;
+}
+
+digitString & digitString::operator&=(const WCS_String & Str)
+{
+	Concat(Str);
+	return *this;
+}
+
+digitString & digitString::operator&=(const digitString & DS)
+{
+	return *this;
+}
+
+digitString & digitString::operator>>(const WCS_String & DS)
+{
 	return *this;
 }
 

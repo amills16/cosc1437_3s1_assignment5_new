@@ -14,8 +14,14 @@ public:
 	digitString Copy(const digitString &);
 	digitString Copy(const WCS_String &);
 	~digitString();
-	digitString & operator = (const digitString &);
-	digitString & operator = (const WCS_String &);
+	digitString & operator =	(const digitString &);
+	digitString & operator =	(const WCS_String &);
+	digitString & operator &=	(const WCS_String &);
+	digitString & operator &=	(const digitString &);
+	digitString & operator >>	(const WCS_String &);
+	digitString & readIn		(const istream &);
+	digitString & setAt			(char *, int);
+
 private:
 
 };
