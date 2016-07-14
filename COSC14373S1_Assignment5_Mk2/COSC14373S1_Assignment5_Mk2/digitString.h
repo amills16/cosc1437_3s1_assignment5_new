@@ -16,7 +16,6 @@ public:
 	~digitString();
 	digitString & operator = (const digitString &);
 	digitString & operator = (const WCS_String &);
-
 private:
 
 };
